@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ['php82', 'php82Extensions.gd', 'php82Extensions.intl', 'php82Extensions.pgsql']
+nixPkgs = ['php82', 'php82Extensions.gd', 'php82Extensions.intl', 'php82Extensions.pgsql', 'php82Extensions.mbstring', 'php82Extensions.zip']
 
 [phases.install]
 cmds = [
@@ -10,6 +10,10 @@ cmds = [
 
 [phases.build]
 cmds = [
+    'mkdir -p storage/framework/{sessions,views,cache,testing}',
+    'mkdir -p storage/logs',
+    'mkdir -p bootstrap/cache',
+    'chmod -R 775 storage bootstrap/cache',
     'php artisan config:cache',
     'php artisan route:cache',
     'php artisan view:cache'
