@@ -19,14 +19,14 @@
                 políticas públicas que beneficien a todos.
             </p>
 
-            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
-                <p class="text-sm text-blue-700">
+            <div class="bg-green-50 border-l-4 border-green-600 p-4 mb-6">
+                <p class="text-sm text-green-700">
                     Tu encuesta ha sido registrada exitosamente. Los resultados agregados
                     estarán disponibles próximamente.
                 </p>
             </div>
 
-            <a href="{{ route('survey.index') }}" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+            <a href="{{ route('survey.index') }}" class="inline-block bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
                 Volver al inicio
             </a>
         </div>

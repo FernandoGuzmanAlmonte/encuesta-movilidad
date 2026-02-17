@@ -129,12 +129,12 @@ input[type="checkbox"]:checked::before {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #00A859, #dc2626);
+    background: linear-gradient(to bottom, #c8e6a0, #4caf50, #1a5c3a);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, #00A859, #b91c1c);
+    background: linear-gradient(to bottom, #a8d88e, #2d8f4e, #143d2b);
 }
 
 /* Smooth scroll */
@@ -197,7 +197,7 @@ html {
 
 /* Button styles */
 .btn-primary {
-    background: linear-gradient(to right, #dc2626, #b91c1c);
+    background: linear-gradient(to right, #2d8f4e, #1a5c3a);
     color: white;
     font-weight: bold;
     padding: 0.75rem 2rem;
@@ -209,15 +209,15 @@ html {
 }
 
 .btn-primary:hover {
-    background: linear-gradient(to right, #b91c1c, #991b1b);
+    background: linear-gradient(to right, #1a5c3a, #143d2b);
     transform: scale(1.05);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
-/* Progress bar - VERDE/BLANCO/ROJO */
+/* Progress bar - Degradado verde */
 .progress-bar {
     height: 0.5rem;
-    background: linear-gradient(to right, #00A859 0%, #ffffff 50%, #dc2626 100%);
+    background: linear-gradient(to right, #c8e6a0, #4caf50, #2d8f4e, #1a5c3a);
     border-radius: 9999px;
     transition: width 0.5s ease;
 }
@@ -238,7 +238,7 @@ html {
     margin-bottom: 1.5rem;
     padding-bottom: 0.75rem;
     border-bottom: 4px solid;
-    border-image: linear-gradient(to right, #00A859, #ffffff, #dc2626) 1;
+    border-image: linear-gradient(to right, #c8e6a0, #4caf50, #1a5c3a) 1;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -293,9 +293,9 @@ html {
 }
 
 .step-circle.active {
-    border-color: #dc2626;
-    background-color: #dc2626;
-    box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.1);
+    border-color: #2d8f4e;
+    background-color: #2d8f4e;
+    box-shadow: 0 0 0 4px rgba(45, 143, 78, 0.15);
     transform: scale(1.1);
 }
 

@@ -5,10 +5,10 @@
 @section('content')
     <div class="max-w-5xl mx-auto">
         <!-- Steps Navigation -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 mb-8 sticky top-20 z-40 animate-fade-in-up" style="border-top: 4px solid; border-image: linear-gradient(to right, #00A859, #ffffff, #dc2626) 1;">
+        <div class="bg-white rounded-2xl shadow-lg p-6 mb-8 sticky top-20 z-40 animate-fade-in-up" style="border-top: 4px solid; border-image: linear-gradient(to right, #c8e6a0, #4caf50, #1a5c3a) 1;">
             <div class="flex items-center justify-between mb-6">
                 <h3 class="text-lg font-bold text-gray-800">Progreso de la Encuesta</h3>
-                <span class="text-sm font-semibold text-red-600" id="progressText">0%</span>
+                <span class="text-sm font-semibold text-green-700" id="progressText">0%</span>
             </div>
 
             <!-- Progress Bar -->
@@ -30,7 +30,7 @@
                     </div>
                 </button>
 
-                <div class="hidden md:block step-connector flex-1 h-1 mx-1" style="background: linear-gradient(to right, #00A859, #ffffff, #dc2626);"></div>
+                <div class="hidden md:block step-connector flex-1 h-1 mx-1" style="background: linear-gradient(to right, #c8e6a0, #4caf50, #1a5c3a);"></div>
 
                 <button type="button" class="step-btn text-center" data-step="2">
                     <div class="flex flex-col items-center">
@@ -44,7 +44,7 @@
                     </div>
                 </button>
 
-                <div class="hidden md:block step-connector flex-1 h-1 mx-1" style="background: linear-gradient(to right, #00A859, #ffffff, #dc2626);"></div>
+                <div class="hidden md:block step-connector flex-1 h-1 mx-1" style="background: linear-gradient(to right, #c8e6a0, #4caf50, #1a5c3a);"></div>
 
                 <button type="button" class="step-btn text-center" data-step="3">
                     <div class="flex flex-col items-center">
@@ -58,7 +58,7 @@
                     </div>
                 </button>
 
-                <div class="hidden md:block step-connector flex-1 h-1 mx-1" style="background: linear-gradient(to right, #00A859, #ffffff, #dc2626);"></div>
+                <div class="hidden md:block step-connector flex-1 h-1 mx-1" style="background: linear-gradient(to right, #c8e6a0, #4caf50, #1a5c3a);"></div>
 
                 <button type="button" class="step-btn text-center" data-step="4">
                     <div class="flex flex-col items-center">
@@ -72,7 +72,7 @@
                     </div>
                 </button>
 
-                <div class="hidden md:block step-connector flex-1 h-1 mx-1" style="background: linear-gradient(to right, #00A859, #ffffff, #dc2626);"></div>
+                <div class="hidden md:block step-connector flex-1 h-1 mx-1" style="background: linear-gradient(to right, #c8e6a0, #4caf50, #1a5c3a);"></div>
 
                 <button type="button" class="step-btn text-center" data-step="5">
                     <div class="flex flex-col items-center">
@@ -86,7 +86,7 @@
                     </div>
                 </button>
 
-                <div class="hidden md:block step-connector flex-1 h-1 mx-1" style="background: linear-gradient(to right, #00A859, #ffffff, #dc2626);"></div>
+                <div class="hidden md:block step-connector flex-1 h-1 mx-1" style="background: linear-gradient(to right, #c8e6a0, #4caf50, #1a5c3a);"></div>
 
                 <button type="button" class="step-btn text-center" data-step="6">
                     <div class="flex flex-col items-center">
@@ -110,7 +110,7 @@
             <div class="form-step active" data-step="1">
                 <div class="section-card mb-8">
                     <div class="section-title">
-                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
+                        <div class="w-12 h-12 bg-green-700 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
                         <span>Datos Generales</span>
                     </div>
 
@@ -119,8 +119,8 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-red-600 font-bold">1.</span>
-                                <span>Edad: <span class="text-red-600">*</span></span>
+                                <span class="text-green-700 font-bold">1.</span>
+                                <span>Edad: <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <select name="age" class="form-select" required>
@@ -139,8 +139,8 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-red-600 font-bold">2.</span>
-                                <span>Género: <span class="text-red-600">*</span></span>
+                                <span class="text-green-700 font-bold">2.</span>
+                                <span>Género: <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="space-y-2">
@@ -169,8 +169,8 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-red-600 font-bold">3.</span>
-                                <span>Colonia o fraccionamiento donde vive: <span class="text-red-600">*</span></span>
+                                <span class="text-green-700 font-bold">3.</span>
+                                <span>Colonia o fraccionamiento donde vive: <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <input type="text" name="neighborhood" class="form-input" placeholder="Ej: Providencia, Chapalita, Centro..." required>
@@ -180,7 +180,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-red-600 font-bold">4.</span>
+                                <span class="text-green-700 font-bold">4.</span>
                                 <span>¿A qué zona, colonia y/o municipio se traslada con mayor frecuencia?</span>
                             </span>
                             </label>
@@ -191,8 +191,8 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-red-600 font-bold">5.</span>
-                                <span>¿Con qué frecuencia sale de su colonia en un día promedio? <span class="text-red-600">*</span></span>
+                                <span class="text-green-700 font-bold">5.</span>
+                                <span>¿Con qué frecuencia sale de su colonia en un día promedio? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <select name="exit_frequency" class="form-select" required>
@@ -208,8 +208,8 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-red-600 font-bold">6.</span>
-                                <span>¿A qué se dedica principalmente? <span class="text-red-600">*</span></span>
+                                <span class="text-green-700 font-bold">6.</span>
+                                <span>¿A qué se dedica principalmente? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
@@ -252,7 +252,7 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-600 font-bold">7.</span>
-                                <span>¿Con qué frecuencia camina como medio de transporte? <span class="text-red-600">*</span></span>
+                                <span>¿Con qué frecuencia camina como medio de transporte? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <select name="walking_frequency" class="form-select" required>
@@ -269,7 +269,7 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-600 font-bold">8.</span>
-                                <span>¿Hay banquetas seguras y transitables en su colonia? <span class="text-red-600">*</span></span>
+                                <span>¿Hay banquetas seguras y transitables en su colonia? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <select name="safe_sidewalks" class="form-select" required>
@@ -286,7 +286,7 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-600 font-bold">9.</span>
-                                <span>¿Considera que su colonia tiene cruces peatonales seguros? <span class="text-red-600">*</span></span>
+                                <span>¿Considera que su colonia tiene cruces peatonales seguros? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
@@ -310,7 +310,7 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-600 font-bold">10.</span>
-                                <span>¿Qué tan segura se siente al caminar en su colonia? <span class="text-red-600">*</span></span>
+                                <span>¿Qué tan segura se siente al caminar en su colonia? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <select name="walking_safety" class="form-select" required>
@@ -340,9 +340,9 @@
             <div class="form-step" data-step="3">
                 <div class="section-card mb-8">
                     <div class="section-title">
-                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
+                        <div class="w-12 h-12 bg-green-700 rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
                         <span>Ciclovías (Movilidad en bicicleta)</span>
-                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-7 h-7 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path>
                         </svg>
                     </div>
@@ -352,8 +352,8 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-blue-600 font-bold">12.</span>
-                                <span>¿Utiliza la bicicleta como medio de transporte? <span class="text-red-600">*</span></span>
+                                <span class="text-green-700 font-bold">12.</span>
+                                <span>¿Utiliza la bicicleta como medio de transporte? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -380,7 +380,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-blue-600 font-bold">13.</span>
+                                <span class="text-green-700 font-bold">13.</span>
                                 <span>¿Existen ciclovías en su ruta habitual?</span>
                             </span>
                             </label>
@@ -404,7 +404,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-blue-600 font-bold">14.</span>
+                                <span class="text-green-700 font-bold">14.</span>
                                 <span>¿Se siente seguro/a usando bicicleta en su zona?</span>
                             </span>
                             </label>
@@ -428,7 +428,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-blue-600 font-bold">15.</span>
+                                <span class="text-green-700 font-bold">15.</span>
                                 <span>¿Qué obstáculos ha enfrentado al usar bicicleta? (puede marcar varias)</span>
                             </span>
                             </label>
@@ -460,7 +460,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-blue-600 font-bold">16.</span>
+                                <span class="text-green-700 font-bold">16.</span>
                                 <span>De tu localidad, ¿En dónde consideras viable una ciclovía?</span>
                             </span>
                             </label>
@@ -474,9 +474,9 @@
             <div class="form-step" data-step="4">
                 <div class="section-card mb-8">
                     <div class="section-title">
-                        <div class="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold text-lg">4</div>
+                        <div class="w-12 h-12 bg-green-700 rounded-full flex items-center justify-center text-white font-bold text-lg">4</div>
                         <span>Transporte Público</span>
-                        <svg class="w-7 h-7 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-7 h-7 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
                         </svg>
                     </div>
@@ -486,8 +486,8 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-yellow-600 font-bold">17.</span>
-                                <span>¿Con qué frecuencia usa el transporte público a la semana? <span class="text-red-600">*</span></span>
+                                <span class="text-green-700 font-bold">17.</span>
+                                <span>¿Con qué frecuencia usa el transporte público a la semana? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -514,7 +514,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-yellow-600 font-bold">18.</span>
+                                <span class="text-green-700 font-bold">18.</span>
                                 <span>¿Qué medio utiliza con más frecuencia?</span>
                             </span>
                             </label>
@@ -542,7 +542,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-yellow-600 font-bold">19.</span>
+                                <span class="text-green-700 font-bold">19.</span>
                                 <span>Tiempo promedio de traslado en transporte público (ida):</span>
                             </span>
                             </label>
@@ -570,7 +570,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-yellow-600 font-bold">20.</span>
+                                <span class="text-green-700 font-bold">20.</span>
                                 <span>¿Cuáles son los principales problemas del transporte público? (máximo 3)</span>
                             </span>
                             </label>
@@ -602,7 +602,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-yellow-600 font-bold">21.</span>
+                                <span class="text-green-700 font-bold">21.</span>
                                 <span>¿Qué ruta o rutas te benefician más? ¿Qué ruta te gustaría?</span>
                             </span>
                             </label>
@@ -616,9 +616,9 @@
             <div class="form-step" data-step="5">
                 <div class="section-card mb-8">
                     <div class="section-title">
-                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">5</div>
+                        <div class="w-12 h-12 bg-green-700 rounded-full flex items-center justify-center text-white font-bold text-lg">5</div>
                         <span>Vehículos Particulares</span>
-                        <svg class="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-7 h-7 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
                         </svg>
                     </div>
@@ -628,8 +628,8 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-purple-600 font-bold">22.</span>
-                                <span>¿Cuenta con vehículo propio? <span class="text-red-600">*</span></span>
+                                <span class="text-green-700 font-bold">22.</span>
+                                <span>¿Cuenta con vehículo propio? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
@@ -652,7 +652,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-purple-600 font-bold">23.</span>
+                                <span class="text-green-700 font-bold">23.</span>
                                 <span>¿Con qué frecuencia lo usa para trasladarse?</span>
                             </span>
                             </label>
@@ -680,7 +680,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-purple-600 font-bold">24.</span>
+                                <span class="text-green-700 font-bold">24.</span>
                                 <span>¿Cuál es su tiempo promedio de traslado en vehículo particular?</span>
                             </span>
                             </label>
@@ -708,7 +708,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-purple-600 font-bold">25.</span>
+                                <span class="text-green-700 font-bold">25.</span>
                                 <span>¿Cómo califica el tráfico en su ruta habitual?</span>
                             </span>
                             </label>
@@ -736,22 +736,22 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-purple-600 font-bold">26.</span>
+                                <span class="text-green-700 font-bold">26.</span>
                                 <span>¿Qué calle en su localidad es en la que más tráfico se hace?</span>
                             </span>
                             </label>
                             <input type="text" name="most_traffic_street" id="trafficStreetInput" class="form-input mb-3" placeholder="Escribe la calle o marca en el mapa...">
 
-                            <div class="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-lg mb-3">
+                            <div class="bg-green-50 border-l-4 border-green-600 p-4 rounded-lg mb-3">
                                 <div class="space-y-2">
-                                    <p class="text-sm text-purple-800 flex items-center space-x-2">
+                                    <p class="text-sm text-green-800 flex items-center space-x-2">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                         </svg>
                                         <span><strong>💡 Tip:</strong> Escribe la dirección y el mapa se actualizará automáticamente</span>
                                     </p>
-                                    <p class="text-xs text-purple-700 ml-7">
+                                    <p class="text-xs text-green-700 ml-7">
                                         Ejemplo: "Av. López Mateos Sur", "Carretera a Chapala", etc.
                                     </p>
                                 </div>
@@ -769,9 +769,9 @@
             <div class="form-step" data-step="6">
                 <div class="section-card mb-8">
                     <div class="section-title">
-                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-lg">6</div>
+                        <div class="w-12 h-12 bg-green-700 rounded-full flex items-center justify-center text-white font-bold text-lg">6</div>
                         <span>Vialidades</span>
-                        <svg class="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-7 h-7 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
                         </svg>
                     </div>
@@ -781,8 +781,8 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-red-600 font-bold">27.</span>
-                                <span>¿Cómo califica el estado de las vialidades en su zona? <span class="text-red-600">*</span></span>
+                                <span class="text-green-700 font-bold">27.</span>
+                                <span>¿Cómo califica el estado de las vialidades en su zona? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <select name="roads_condition" class="form-select" required>
@@ -799,7 +799,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-red-600 font-bold">28.</span>
+                                <span class="text-green-700 font-bold">28.</span>
                                 <span>¿Cuáles son los principales problemas de las vialidades? (puede marcar varias)</span>
                             </span>
                             </label>
@@ -831,8 +831,8 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-red-600 font-bold">29.</span>
-                                <span>¿Siente que las calles están diseñadas para todos los modos de transporte? <span class="text-red-600">*</span></span>
+                                <span class="text-green-700 font-bold">29.</span>
+                                <span>¿Siente que las calles están diseñadas para todos los modos de transporte? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
@@ -855,8 +855,8 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-red-600 font-bold">30.</span>
-                                <span>¿Con qué frecuencia hay mantenimiento en las calles que transita? <span class="text-red-600">*</span></span>
+                                <span class="text-green-700 font-bold">30.</span>
+                                <span>¿Con qué frecuencia hay mantenimiento en las calles que transita? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -883,22 +883,22 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-red-600 font-bold">31.</span>
+                                <span class="text-green-700 font-bold">31.</span>
                                 <span>¿Qué calles, avenidas o zonas considera prioritarias para mejorar?</span>
                             </span>
                             </label>
                             <textarea name="priority_zones" id="priorityZonesInput" class="form-input mb-3" rows="3" placeholder="Describe las zonas que consideras prioritarias o márcalas en el mapa..."></textarea>
 
-                            <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-lg mb-3">
+                            <div class="bg-green-50 border-l-4 border-green-600 p-4 rounded-lg mb-3">
                                 <div class="space-y-2">
-                                    <p class="text-sm text-red-800 flex items-center space-x-2">
+                                    <p class="text-sm text-green-800 flex items-center space-x-2">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                         </svg>
                                         <span><strong>💡 Tip:</strong> Escribe la dirección y el mapa se actualizará automáticamente</span>
                                     </p>
-                                    <p class="text-xs text-red-700 ml-7">
+                                    <p class="text-xs text-green-700 ml-7">
                                         Ejemplo: "Av. Revolución", "Centro de Tlajomulco", etc.
                                     </p>
                                 </div>
@@ -913,7 +913,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-red-600 font-bold">32.</span>
+                                <span class="text-green-700 font-bold">32.</span>
                                 <span>De las siguientes vialidades, ¿Cuál transitas con mayor frecuencia?</span>
                             </span>
                             </label>
@@ -949,7 +949,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-red-600 font-bold">33.</span>
+                                <span class="text-green-700 font-bold">33.</span>
                                 <span>¿Qué medio utiliza con más frecuencia para trasladarse en las vialidades antes seleccionadas?</span>
                             </span>
                             </label>
@@ -989,7 +989,7 @@
                     <span>Anterior</span>
                 </button>
 
-                <button type="button" id="nextBtn" class="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition-all duration-300 flex items-center space-x-2">
+                <button type="button" id="nextBtn" class="px-6 py-3 bg-green-700 hover:bg-green-800 text-white font-bold rounded-lg transition-all duration-300 flex items-center space-x-2">
                     <span>Continuar</span>
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1173,7 +1173,7 @@
 
                 const icon = L.divIcon({
                     className: 'custom-marker',
-                    html: '<div style="background: #dc2626; width: 30px; height: 30px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 10px rgba(0,0,0,0.3);"></div>',
+                    html: '<div style="background: #2d8f4e; width: 30px; height: 30px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 10px rgba(0,0,0,0.3);"></div>',
                     iconSize: [30, 30]
                 });
 
