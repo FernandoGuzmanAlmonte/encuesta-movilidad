@@ -37,6 +37,16 @@ class Survey extends Model
         // Geolocation
         'traffic_street_lat', 'traffic_street_lng',
         'priority_zone_lat', 'priority_zone_lng',
+
+        // Disability & accessibility (Q34-Q41)
+        'disability_in_household',
+        'disability_types', 'disability_types_other',
+        'urban_infrastructure_accessibility',
+        'mobility_barriers', 'mobility_barriers_other',
+        'transport_accessibility_rating',
+        'urgent_accessibility_actions', 'urgent_actions_other',
+        'public_spaces_accessibility',
+        'disability_comments',
     ];
 
     protected $casts = [
@@ -44,6 +54,9 @@ class Survey extends Model
         'public_transport_problems' => 'array',
         'road_problems' => 'array',
         'frequent_roads' => 'array',
+        'disability_types' => 'array',
+        'mobility_barriers' => 'array',
+        'urgent_accessibility_actions' => 'array',
         'traffic_street_lat' => 'decimal:8',
         'traffic_street_lng' => 'decimal:8',
         'priority_zone_lat' => 'decimal:8',

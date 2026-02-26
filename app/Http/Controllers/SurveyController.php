@@ -72,6 +72,19 @@ class SurveyController extends Controller
             'traffic_street_lng' => 'nullable|numeric',
             'priority_zone_lat' => 'nullable|numeric',
             'priority_zone_lng' => 'nullable|numeric',
+
+            // Disability & accessibility (Q34-Q41, all optional)
+            'disability_in_household' => 'nullable|string',
+            'disability_types' => 'nullable|array',
+            'disability_types_other' => 'nullable|string|max:255',
+            'urban_infrastructure_accessibility' => 'nullable|string',
+            'mobility_barriers' => 'nullable|array',
+            'mobility_barriers_other' => 'nullable|string|max:255',
+            'transport_accessibility_rating' => 'nullable|string',
+            'urgent_accessibility_actions' => 'nullable|array',
+            'urgent_actions_other' => 'nullable|string|max:255',
+            'public_spaces_accessibility' => 'nullable|string',
+            'disability_comments' => 'nullable|string',
         ]);
 
         // Save survey

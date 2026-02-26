@@ -17,7 +17,7 @@
             </div>
 
             <!-- Steps Indicators - Version compacta -->
-            <div class="grid grid-cols-6 gap-1 md:flex md:items-center md:justify-between">
+            <div class="grid grid-cols-7 gap-1 md:flex md:items-center md:justify-between">
                 <button type="button" class="step-btn text-center" data-step="1">
                     <div class="flex flex-col items-center">
                         <div class="step-circle mb-1 md:mb-2" id="step-circle-1">
@@ -97,6 +97,20 @@
                             </svg>
                         </div>
                         <span class="hidden md:block text-xs font-medium text-gray-600 text-center">Vialidades</span>
+                    </div>
+                </button>
+
+                <div class="hidden md:block step-connector flex-1 h-1 mx-1" style="background: linear-gradient(to right, #c8e6a0, #4caf50, #1a5c3a);"></div>
+
+                <button type="button" class="step-btn text-center" data-step="7">
+                    <div class="flex flex-col items-center">
+                        <div class="step-circle mb-1 md:mb-2" id="step-circle-7">
+                            <span class="step-number">7</span>
+                            <svg class="step-check hidden" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <span class="hidden md:block text-xs font-medium text-gray-600 text-center">Accesibilidad</span>
                     </div>
                 </button>
             </div>
@@ -310,15 +324,15 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-600 font-bold">10.</span>
-                                <span>¿Qué tan segura se siente al caminar en su colonia? <span class="text-green-700">*</span></span>
+                                <span>¿Qué tan seguro se siente al caminar en su colonia? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <select name="walking_safety" class="form-select" required>
                                 <option value="">Seleccione una opción...</option>
-                                <option value="very_safe">Muy segura</option>
-                                <option value="somewhat_safe">Algo segura</option>
-                                <option value="not_very_safe">Poco segura</option>
-                                <option value="not_safe">Nada segura</option>
+                                <option value="very_safe">Muy seguro</option>
+                                <option value="somewhat_safe">Algo seguro</option>
+                                <option value="not_very_safe">Poco seguro</option>
+                                <option value="not_safe">Nada seguro</option>
                             </select>
                         </div>
 
@@ -524,12 +538,28 @@
                                     <span class="flex-1">🚌 Camión urbano</span>
                                 </label>
                                 <label class="radio-option">
+                                    <input type="radio" name="most_used_transport" value="feeder_bus">
+                                    <span class="flex-1">🚌 Camión/Alimentadora</span>
+                                </label>
+                                <label class="radio-option">
                                     <input type="radio" name="most_used_transport" value="light_rail">
                                     <span class="flex-1">🚊 Tren ligero</span>
                                 </label>
                                 <label class="radio-option">
                                     <input type="radio" name="most_used_transport" value="taxi">
-                                    <span class="flex-1">🚕 Taxi/sitio</span>
+                                    <span class="flex-1">🚕 Taxi/Sitio</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="most_used_transport" value="uber">
+                                    <span class="flex-1">🚗 Uber</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="most_used_transport" value="macro_calzada">
+                                    <span class="flex-1">🚌 Macro calzada</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="most_used_transport" value="macro_periferico">
+                                    <span class="flex-1">🚌 Macro periférico</span>
                                 </label>
                                 <label class="radio-option">
                                     <input type="radio" name="most_used_transport" value="other">
@@ -980,6 +1010,298 @@
                 </div>
             </div>
 
+            <!-- STEP 7: ACCESIBILIDAD Y DISCAPACIDAD (OPCIONAL) -->
+            <div class="form-step" data-step="7">
+                <div class="section-card mb-8">
+                    <div class="section-title">
+                        <div class="w-12 h-12 bg-green-700 rounded-full flex items-center justify-center text-white font-bold text-lg">7</div>
+                        <span>Accesibilidad y Discapacidad</span>
+                        <svg class="w-7 h-7 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Aviso opcional -->
+                    <div class="bg-green-50 border-l-4 border-green-600 p-4 rounded-lg mb-6">
+                        <p class="text-sm text-green-800 font-semibold">Esta sección es completamente opcional.</p>
+                        <p class="text-sm text-green-700 mt-1">Si eres una persona con discapacidad o una persona cuidadora, responde las siguientes preguntas. Si no aplica a tu caso, puedes enviar la encuesta directamente.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-6">
+
+                        <!-- Question 34 -->
+                        <div class="space-y-3">
+                            <label class="question-label">
+                            <span class="flex items-center space-x-2">
+                                <span class="text-green-700 font-bold">34.</span>
+                                <span>¿Cuenta usted o alguien en su hogar con alguna discapacidad que influya en su movilidad diaria?</span>
+                            </span>
+                            </label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                <label class="radio-option">
+                                    <input type="radio" name="disability_in_household" value="si_yo" id="disability_si_yo">
+                                    <span class="flex-1">Sí, yo</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="disability_in_household" value="si_alguien">
+                                    <span class="flex-1">Sí, alguien en mi hogar</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="disability_in_household" value="no">
+                                    <span class="flex-1">No</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="disability_in_household" value="ninguna">
+                                    <span class="flex-1">Ninguna de las anteriores</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 35 -->
+                        <div class="space-y-3">
+                            <label class="question-label">
+                            <span class="flex items-center space-x-2">
+                                <span class="text-green-700 font-bold">35.</span>
+                                <span>En caso de responder sí, indique el tipo de discapacidad presente en el hogar: <em class="text-gray-500 font-normal">(puede elegir varias)</em></span>
+                            </span>
+                            </label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="disability_types[]" value="motriz">
+                                    <span class="flex-1">Motriz (silla de ruedas, bastón, andadera, movilidad reducida, etc.)</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="disability_types[]" value="visual">
+                                    <span class="flex-1">Visual</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="disability_types[]" value="auditiva">
+                                    <span class="flex-1">Auditiva</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="disability_types[]" value="intelectual">
+                                    <span class="flex-1">Intelectual</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="disability_types[]" value="psicosocial">
+                                    <span class="flex-1">Psicosocial</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="disability_types[]" value="otra" id="disability_types_otra_chk">
+                                    <span class="flex-1">Otra</span>
+                                </label>
+                            </div>
+                            <div id="disability_types_otra_container" class="hidden mt-2">
+                                <input type="text" name="disability_types_other" class="form-input" placeholder="Especifique el tipo de discapacidad...">
+                            </div>
+                        </div>
+
+                        <!-- Question 36 -->
+                        <div class="space-y-3">
+                            <label class="question-label">
+                            <span class="flex items-center space-x-2">
+                                <span class="text-green-700 font-bold">36.</span>
+                                <span>En su colonia, la infraestructura urbana es accesible para personas con discapacidad:</span>
+                            </span>
+                            </label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                <label class="radio-option">
+                                    <input type="radio" name="urban_infrastructure_accessibility" value="si">
+                                    <span class="flex-1">Sí</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="urban_infrastructure_accessibility" value="parcialmente">
+                                    <span class="flex-1">Parcialmente</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="urban_infrastructure_accessibility" value="muy_poca">
+                                    <span class="flex-1">Muy poca</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="urban_infrastructure_accessibility" value="no_accesible">
+                                    <span class="flex-1">No es accesible</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="urban_infrastructure_accessibility" value="no_lo_se">
+                                    <span class="flex-1">No lo sé</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 37 -->
+                        <div class="space-y-3">
+                            <label class="question-label">
+                            <span class="flex items-center space-x-2">
+                                <span class="text-green-700 font-bold">37.</span>
+                                <span>¿Cuáles son las principales barreras que dificultan la movilidad de personas con discapacidad en su zona? <em class="text-gray-500 font-normal">(puede marcar varias)</em></span>
+                            </span>
+                            </label>
+                            <div class="grid grid-cols-1 gap-2">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="mobility_barriers[]" value="banquetas_mal_estado">
+                                    <span class="flex-1">Banquetas en mal estado o con obstáculos</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="mobility_barriers[]" value="falta_rampas">
+                                    <span class="flex-1">Falta de rampas adecuadas</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="mobility_barriers[]" value="rampas_mal_construidas">
+                                    <span class="flex-1">Rampas muy inclinadas o mal construidas</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="mobility_barriers[]" value="cruces_inseguros">
+                                    <span class="flex-1">Cruces peatonales inseguros o sin señalización accesible</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="mobility_barriers[]" value="falta_semaforos">
+                                    <span class="flex-1">Falta de semáforos auditivos o visuales</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="mobility_barriers[]" value="transporte_no_accesible">
+                                    <span class="flex-1">Falta de transporte público accesible (unidades sin espacio, sin rampas, sin prioridad)</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="mobility_barriers[]" value="vehiculos_invadiendo">
+                                    <span class="flex-1">Vehículos invadiendo banquetas o rampas</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="mobility_barriers[]" value="iluminacion_insuficiente">
+                                    <span class="flex-1">Iluminación insuficiente</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="mobility_barriers[]" value="otra" id="mobility_barriers_otra_chk">
+                                    <span class="flex-1">Otra</span>
+                                </label>
+                            </div>
+                            <div id="mobility_barriers_otra_container" class="hidden mt-2">
+                                <input type="text" name="mobility_barriers_other" class="form-input" placeholder="Especifique la barrera...">
+                            </div>
+                        </div>
+
+                        <!-- Question 38 -->
+                        <div class="space-y-3">
+                            <label class="question-label">
+                            <span class="flex items-center space-x-2">
+                                <span class="text-green-700 font-bold">38.</span>
+                                <span>¿Qué tan accesible considera el transporte público en su zona para personas con discapacidad?</span>
+                            </span>
+                            </label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                <label class="radio-option">
+                                    <input type="radio" name="transport_accessibility_rating" value="muy_accesible">
+                                    <span class="flex-1">Muy accesible</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="transport_accessibility_rating" value="algo_accesible">
+                                    <span class="flex-1">Algo accesible</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="transport_accessibility_rating" value="poco_accesible">
+                                    <span class="flex-1">Poco accesible</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="transport_accessibility_rating" value="nada_accesible">
+                                    <span class="flex-1">Nada accesible</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="transport_accessibility_rating" value="no_lo_utilizo">
+                                    <span class="flex-1">No lo utilizo</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 39 -->
+                        <div class="space-y-3">
+                            <label class="question-label">
+                            <span class="flex items-center space-x-2">
+                                <span class="text-green-700 font-bold">39.</span>
+                                <span>¿Qué acciones considera más urgentes para mejorar la movilidad y accesibilidad para personas con discapacidad en Tlajomulco? <em class="text-gray-500 font-normal">(máximo 3 opciones)</em></span>
+                            </span>
+                            </label>
+                            <div class="grid grid-cols-1 gap-2" id="urgentActionsGroup">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="urgent_accessibility_actions[]" value="reparar_banquetas" class="urgent-action-chk">
+                                    <span class="flex-1">Reparar y nivelar banquetas</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="urgent_accessibility_actions[]" value="construir_rampas" class="urgent-action-chk">
+                                    <span class="flex-1">Construir rampas accesibles y estandarizadas</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="urgent_accessibility_actions[]" value="adaptar_transporte" class="urgent-action-chk">
+                                    <span class="flex-1">Adaptar transporte público (rampas, espacios, señalización)</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="urgent_accessibility_actions[]" value="mejorar_senalizacion" class="urgent-action-chk">
+                                    <span class="flex-1">Mejorar señalización visual y auditiva en cruceros</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="urgent_accessibility_actions[]" value="mayor_iluminacion" class="urgent-action-chk">
+                                    <span class="flex-1">Mayor iluminación en calles</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="urgent_accessibility_actions[]" value="cultura_vial" class="urgent-action-chk">
+                                    <span class="flex-1">Programas de cultura vial y respeto a accesos</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="urgent_accessibility_actions[]" value="rutas_inclusivas" class="urgent-action-chk">
+                                    <span class="flex-1">Crear rutas seguras e inclusivas en centros escolares, de salud y mercados</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="urgent_accessibility_actions[]" value="otra" id="urgent_actions_otra_chk" class="urgent-action-chk">
+                                    <span class="flex-1">Otra</span>
+                                </label>
+                            </div>
+                            <div id="urgent_actions_otra_container" class="hidden mt-2">
+                                <input type="text" name="urgent_actions_other" class="form-input" placeholder="Especifique la acción...">
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1" id="urgentActionsCounter">Seleccionadas: 0 / 3</p>
+                        </div>
+
+                        <!-- Question 40 -->
+                        <div class="space-y-3">
+                            <label class="question-label">
+                            <span class="flex items-center space-x-2">
+                                <span class="text-green-700 font-bold">40.</span>
+                                <span>En su opinión, los espacios públicos cercanos (parques, unidades deportivas, centros de salud, escuelas) son accesibles para personas con discapacidad:</span>
+                            </span>
+                            </label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                <label class="radio-option">
+                                    <input type="radio" name="public_spaces_accessibility" value="si">
+                                    <span class="flex-1">Sí</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="public_spaces_accessibility" value="parcialmente">
+                                    <span class="flex-1">Parcialmente</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="public_spaces_accessibility" value="no">
+                                    <span class="flex-1">No</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="public_spaces_accessibility" value="no_lo_se">
+                                    <span class="flex-1">No lo sé</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 41 -->
+                        <div class="space-y-3">
+                            <label class="question-label">
+                            <span class="flex items-center space-x-2">
+                                <span class="text-green-700 font-bold">41.</span>
+                                <span>Comentarios o necesidades específicas relacionadas con movilidad y discapacidad en su comunidad:</span>
+                            </span>
+                            </label>
+                            <textarea name="disability_comments" class="form-input" rows="5" placeholder="Comparte tus comentarios o necesidades específicas..."></textarea>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
             <!-- Navigation Buttons -->
             <div class="flex justify-between items-center mb-8">
                 <button type="button" id="prevBtn" class="px-6 py-3 bg-gray-500 hover:bg-gray-600 text-white font-bold rounded-lg transition-all duration-300 flex items-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
@@ -1009,7 +1331,7 @@
     @push('scripts')
         <script>
             let currentStep = 1;
-            const totalSteps = 6;
+            const totalSteps = 7;
             const form = document.getElementById('surveyForm');
             const prevBtn = document.getElementById('prevBtn');
             const nextBtn = document.getElementById('nextBtn');
@@ -1320,6 +1642,41 @@
 
             // Initialize first step
             showStep(1);
+
+            // Toggle "Otra" text inputs in step 7
+            function setupOtraToggle(checkboxId, containerId) {
+                const chk = document.getElementById(checkboxId);
+                const container = document.getElementById(containerId);
+                if (chk && container) {
+                    chk.addEventListener('change', function () {
+                        container.classList.toggle('hidden', !this.checked);
+                    });
+                }
+            }
+            setupOtraToggle('disability_types_otra_chk', 'disability_types_otra_container');
+            setupOtraToggle('mobility_barriers_otra_chk', 'mobility_barriers_otra_container');
+            setupOtraToggle('urgent_actions_otra_chk', 'urgent_actions_otra_container');
+
+            // Limit Q39 to max 3 checkboxes
+            const urgentCheckboxes = document.querySelectorAll('.urgent-action-chk');
+            const urgentCounter = document.getElementById('urgentActionsCounter');
+            urgentCheckboxes.forEach(function (chk) {
+                chk.addEventListener('change', function () {
+                    const checked = document.querySelectorAll('.urgent-action-chk:checked');
+                    if (urgentCounter) {
+                        urgentCounter.textContent = 'Seleccionadas: ' + checked.length + ' / 3';
+                    }
+                    if (checked.length >= 3) {
+                        urgentCheckboxes.forEach(function (c) {
+                            if (!c.checked) c.disabled = true;
+                        });
+                    } else {
+                        urgentCheckboxes.forEach(function (c) {
+                            c.disabled = false;
+                        });
+                    }
+                });
+            });
         </script>
     @endpush
 @endsection

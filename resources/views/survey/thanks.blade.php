@@ -14,9 +14,9 @@
             <h2 class="text-3xl font-bold text-gray-800 mb-4">¡Gracias por tu participación!</h2>
 
             <p class="text-gray-600 mb-6">
-                Tu opinión es muy valiosa para nosotros y nos ayudará a mejorar la movilidad
-                en nuestra comunidad. Los datos recopilados serán analizados para diseñar mejores
-                políticas públicas que beneficien a todos.
+                Una movilidad sustentable y sostenible es nuestro derecho.<br>
+                En equipo, podemos construir el Tlajo que necesitamos.<br>
+                Gracias por ser parte de este cambio.
             </p>
 
             <div class="bg-green-50 border-l-4 border-green-600 p-4 mb-6">
