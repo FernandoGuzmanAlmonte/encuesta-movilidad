@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Encuesta de Movilidad - PRI')</title>
+    <title>@yield('title', 'Encuesta Movilidad Sustentable y Sostenible Tlajomulco')</title>
+    <meta name="description" content="Participa en la Encuesta de Movilidad Sustentable y Sostenible de Tlajomulco. Tu opinión construye mejores comunidades.">
+    <meta name="keywords" content="movilidad sustentable, Tlajomulco, encuesta, movilidad urbana, Marcos Rosalio, transporte, sostenible">
+    <meta name="author" content="Marcos Rosalio Tlajomulco">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://marcosrosaliotlajomulco.com.mx/">
+
+    <!-- Open Graph (para compartir en redes sociales) -->
+    <meta property="og:title" content="Encuesta Movilidad Sustentable y Sostenible Tlajomulco">
+    <meta property="og:description" content="Participa en la encuesta y ayuda a construir una mejor movilidad en Tlajomulco.">
+    <meta property="og:url" content="https://marcosrosaliotlajomulco.com.mx/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ asset('images/rosalio_logo_completo.png') }}">
+
     <link rel="icon" type="image/png" href="{{ asset('images/rosalio_logo.png') }}">
 
     <!-- Leaflet CSS -->

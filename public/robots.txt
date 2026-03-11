@@ -1,2 +1,6 @@
 User-agent: *
-Disallow:
+Disallow: /login
+Disallow: /dashboard
+Disallow: /logout
+
+Sitemap: https://marcosrosaliotlajomulco.com.mx/sitemap.xml
