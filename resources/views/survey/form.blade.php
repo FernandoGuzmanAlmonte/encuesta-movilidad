@@ -324,15 +324,15 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-600 font-bold">10.</span>
-                                <span>¿Qué tan seguro se siente al caminar en su colonia? <span class="text-green-700">*</span></span>
+                                <span>¿Qué tan seguro/a se siente al caminar en su colonia? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <select name="walking_safety" class="form-select" required>
                                 <option value="">Seleccione una opción...</option>
-                                <option value="very_safe">Muy seguro</option>
-                                <option value="somewhat_safe">Algo seguro</option>
-                                <option value="not_very_safe">Poco seguro</option>
-                                <option value="not_safe">Nada seguro</option>
+                                <option value="very_safe">Muy seguro/a</option>
+                                <option value="somewhat_safe">Algo seguro/a</option>
+                                <option value="not_very_safe">Poco seguro/a</option>
+                                <option value="not_safe">Nada seguro/a</option>
                             </select>
                         </div>
 

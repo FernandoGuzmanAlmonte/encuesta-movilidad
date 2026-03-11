@@ -36,40 +36,52 @@
                     <img src="{{ asset('images/rosalio_logo.png') }}" alt="Rosalio Logo" class="h-16 w-18 md:h-20 md:w-24">
                 </div>
                 <div>
-                    <h1 class="text-xl md:text-2xl font-bold text-gray-800">Encuesta de Movilidad Urbana</h1>
+                    <h1 class="text-xl md:text-2xl font-bold text-gray-800">Encuesta Movilidad Sustentable y Sostenible Tlajomulco</h1>
                     <p class="text-xs md:text-sm text-gray-600">Tu opinión construye mejores comunidades</p>
                 </div>
             </div>
 
             <!-- Navigation (Desktop) -->
             <div class="hidden lg:flex items-center space-x-2">
-                <a href="{{ route('survey.index') }}" class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors font-medium {{ request()->routeIs('survey.index') ? 'bg-green-50 text-green-700' : '' }}">
-                    📝 Encuesta
-                </a>
-                <a href="{{ route('dashboard.index') }}" class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors font-medium {{ request()->routeIs('dashboard.*') ? 'bg-green-50 text-green-700' : '' }}">
-                    📊 Dashboard
-                </a>
+                @if(session('admin_logged_in'))
+                    <a href="{{ route('dashboard.index') }}" class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors font-medium {{ request()->routeIs('dashboard.*') ? 'bg-green-50 text-green-700' : '' }}">
+                        📊 Dashboard
+                    </a>
+                    <form method="POST" action="{{ route('logout') }}" class="inline">
+                        @csrf
+                        <button type="submit" class="px-4 py-2 rounded-lg text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors font-medium">
+                            🚪 Cerrar sesión
+                        </button>
+                    </form>
+                @endif
             </div>
 
             <!-- Mobile menu button -->
+            @if(session('admin_logged_in'))
             <button id="mobileMenuBtn" class="lg:hidden text-gray-700 p-2 hover:bg-gray-100 rounded-lg">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
+            @endif
         </div>
 
         <!-- Mobile menu -->
+        @if(session('admin_logged_in'))
         <div id="mobileMenu" class="lg:hidden hidden mt-4 pb-4 border-t pt-4">
             <div class="flex flex-col space-y-2">
-                <a href="{{ route('survey.index') }}" class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors {{ request()->routeIs('survey.index') ? 'bg-green-50 text-green-700 font-semibold' : '' }}">
-                    📝 Encuesta
-                </a>
                 <a href="{{ route('dashboard.index') }}" class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors {{ request()->routeIs('dashboard.*') ? 'bg-green-50 text-green-700 font-semibold' : '' }}">
                     📊 Dashboard
                 </a>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit" class="w-full text-left px-4 py-2 rounded-lg text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors">
+                        🚪 Cerrar sesión
+                    </button>
+                </form>
             </div>
         </div>
+        @endif
     </div>
 </header>
 
@@ -118,7 +130,7 @@
             </div>
             <div class="border-t border-gray-700 pt-4 py-2 mt-0">
                 <p class="text-sm text-gray-400">&copy; {{ date('Y') }} - Todos los derechos reservados</p>
-                <p class="text-xs text-gray-500 mt-2">Encuesta de Movilidad Urbana</p>
+                <p class="text-xs text-gray-500 mt-2">Encuesta Movilidad Sustentable y Sostenible Tlajomulco</p>
             </div>
         </div>
     </div>
