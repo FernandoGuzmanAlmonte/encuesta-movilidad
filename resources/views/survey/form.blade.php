@@ -133,7 +133,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">1.</span>
+                                <span class="text-green-700 font-bold question-number">1.</span>
                                 <span>Edad: <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -153,7 +153,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">2.</span>
+                                <span class="text-green-700 font-bold question-number">2.</span>
                                 <span>Género: <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -183,7 +183,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">3.</span>
+                                <span class="text-green-700 font-bold question-number">3.</span>
                                 <span>Colonia o fraccionamiento donde vive: <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -194,7 +194,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">4.</span>
+                                <span class="text-green-700 font-bold question-number">4.</span>
                                 <span>¿A qué zona, colonia y/o municipio se traslada con mayor frecuencia?</span>
                             </span>
                             </label>
@@ -205,7 +205,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">5.</span>
+                                <span class="text-green-700 font-bold question-number">5.</span>
                                 <span>¿Con qué frecuencia sale de su colonia en un día promedio? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -222,7 +222,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">6.</span>
+                                <span class="text-green-700 font-bold question-number">6.</span>
                                 <span>¿A qué se dedica principalmente? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -265,7 +265,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-600 font-bold">7.</span>
+                                <span class="text-green-600 font-bold question-number">7.</span>
                                 <span>¿Con qué frecuencia camina como medio de transporte? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -282,7 +282,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-600 font-bold">8.</span>
+                                <span class="text-green-600 font-bold question-number">8.</span>
                                 <span>¿Hay banquetas seguras y transitables en su colonia? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -299,7 +299,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-600 font-bold">9.</span>
+                                <span class="text-green-600 font-bold question-number">9.</span>
                                 <span>¿Considera que su colonia tiene cruces peatonales seguros? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -323,7 +323,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-600 font-bold">10.</span>
+                                <span class="text-green-600 font-bold question-number">10.</span>
                                 <span>¿Qué tan seguro/a se siente al caminar en su colonia? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -340,7 +340,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-600 font-bold">11.</span>
+                                <span class="text-green-600 font-bold question-number">11.</span>
                                 <span>¿Qué mejoraría de la movilidad peatonal en su zona?</span>
                             </span>
                             </label>
@@ -366,7 +366,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">12.</span>
+                                <span class="text-green-700 font-bold question-number">12.</span>
                                 <span>¿Utiliza la bicicleta como medio de transporte? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -394,7 +394,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">13.</span>
+                                <span class="text-green-700 font-bold question-number">13.</span>
                                 <span>¿Existen ciclovías en su ruta habitual?</span>
                             </span>
                             </label>
@@ -418,7 +418,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">14.</span>
+                                <span class="text-green-700 font-bold question-number">14.</span>
                                 <span>¿Se siente seguro/a usando bicicleta en su zona?</span>
                             </span>
                             </label>
@@ -442,7 +442,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">15.</span>
+                                <span class="text-green-700 font-bold question-number">15.</span>
                                 <span>¿Qué obstáculos ha enfrentado al usar bicicleta? (puede marcar varias)</span>
                             </span>
                             </label>
@@ -474,7 +474,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">16.</span>
+                                <span class="text-green-700 font-bold question-number">16.</span>
                                 <span>De tu localidad, ¿En dónde consideras viable una ciclovía?</span>
                             </span>
                             </label>
@@ -500,7 +500,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">17.</span>
+                                <span class="text-green-700 font-bold question-number">17.</span>
                                 <span>¿Con qué frecuencia usa el transporte público a la semana? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -528,7 +528,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">18.</span>
+                                <span class="text-green-700 font-bold question-number">18.</span>
                                 <span>¿Qué medio utiliza con más frecuencia?</span>
                             </span>
                             </label>
@@ -572,7 +572,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">19.</span>
+                                <span class="text-green-700 font-bold question-number">19.</span>
                                 <span>Tiempo promedio de traslado en transporte público (ida):</span>
                             </span>
                             </label>
@@ -600,7 +600,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">20.</span>
+                                <span class="text-green-700 font-bold question-number">20.</span>
                                 <span>¿Cuáles son los principales problemas del transporte público? (máximo 3)</span>
                             </span>
                             </label>
@@ -632,7 +632,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">21.</span>
+                                <span class="text-green-700 font-bold question-number">21.</span>
                                 <span>¿Qué ruta o rutas te benefician más? ¿Qué ruta te gustaría?</span>
                             </span>
                             </label>
@@ -658,7 +658,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">22.</span>
+                                <span class="text-green-700 font-bold question-number">22.</span>
                                 <span>¿Cuenta con vehículo propio? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -679,10 +679,10 @@
                         </div>
 
                         <!-- Question 23 -->
-                        <div class="space-y-3">
+                        <div class="space-y-3 hidden" id="question23">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">23.</span>
+                                <span class="text-green-700 font-bold question-number">23.</span>
                                 <span>¿Con qué frecuencia lo usa para trasladarse?</span>
                             </span>
                             </label>
@@ -707,10 +707,10 @@
                         </div>
 
                         <!-- Question 24 -->
-                        <div class="space-y-3">
+                        <div class="space-y-3 hidden" id="question24">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">24.</span>
+                                <span class="text-green-700 font-bold question-number">24.</span>
                                 <span>¿Cuál es su tiempo promedio de traslado en vehículo particular?</span>
                             </span>
                             </label>
@@ -735,10 +735,10 @@
                         </div>
 
                         <!-- Question 25 -->
-                        <div class="space-y-3">
+                        <div class="space-y-3 hidden" id="question25">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">25.</span>
+                                <span class="text-green-700 font-bold question-number">25.</span>
                                 <span>¿Cómo califica el tráfico en su ruta habitual?</span>
                             </span>
                             </label>
@@ -766,7 +766,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">26.</span>
+                                <span class="text-green-700 font-bold question-number">26.</span>
                                 <span>¿Qué calle en su localidad es en la que más tráfico se hace?</span>
                             </span>
                             </label>
@@ -811,7 +811,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">27.</span>
+                                <span class="text-green-700 font-bold question-number">27.</span>
                                 <span>¿Cómo califica el estado de las vialidades en su zona? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -829,7 +829,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">28.</span>
+                                <span class="text-green-700 font-bold question-number">28.</span>
                                 <span>¿Cuáles son los principales problemas de las vialidades? (puede marcar varias)</span>
                             </span>
                             </label>
@@ -861,7 +861,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">29.</span>
+                                <span class="text-green-700 font-bold question-number">29.</span>
                                 <span>¿Siente que las calles están diseñadas para todos los modos de transporte? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -885,7 +885,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">30.</span>
+                                <span class="text-green-700 font-bold question-number">30.</span>
                                 <span>¿Con qué frecuencia hay mantenimiento en las calles que transita? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
@@ -913,7 +913,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">31.</span>
+                                <span class="text-green-700 font-bold question-number">31.</span>
                                 <span>¿Qué calles, avenidas o zonas considera prioritarias para mejorar?</span>
                             </span>
                             </label>
@@ -943,7 +943,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">32.</span>
+                                <span class="text-green-700 font-bold question-number">32.</span>
                                 <span>De las siguientes vialidades, ¿Cuál transitas con mayor frecuencia?</span>
                             </span>
                             </label>
@@ -979,7 +979,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">33.</span>
+                                <span class="text-green-700 font-bold question-number">33.</span>
                                 <span>¿Qué medio utiliza con más frecuencia para trasladarse en las vialidades antes seleccionadas?</span>
                             </span>
                             </label>
@@ -1033,7 +1033,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">34.</span>
+                                <span class="text-green-700 font-bold question-number">34.</span>
                                 <span>¿Cuenta usted o alguien en su hogar con alguna discapacidad que influya en su movilidad diaria?</span>
                             </span>
                             </label>
@@ -1058,10 +1058,10 @@
                         </div>
 
                         <!-- Question 35 -->
-                        <div class="space-y-3">
+                        <div class="space-y-3 hidden" id="question35">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">35.</span>
+                                <span class="text-green-700 font-bold question-number">35.</span>
                                 <span>En caso de responder sí, indique el tipo de discapacidad presente en el hogar: <em class="text-gray-500 font-normal">(puede elegir varias)</em></span>
                             </span>
                             </label>
@@ -1100,7 +1100,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">36.</span>
+                                <span class="text-green-700 font-bold question-number">36.</span>
                                 <span>En su colonia, la infraestructura urbana es accesible para personas con discapacidad:</span>
                             </span>
                             </label>
@@ -1132,7 +1132,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">37.</span>
+                                <span class="text-green-700 font-bold question-number">37.</span>
                                 <span>¿Cuáles son las principales barreras que dificultan la movilidad de personas con discapacidad en su zona? <em class="text-gray-500 font-normal">(puede marcar varias)</em></span>
                             </span>
                             </label>
@@ -1183,7 +1183,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">38.</span>
+                                <span class="text-green-700 font-bold question-number">38.</span>
                                 <span>¿Qué tan accesible considera el transporte público en su zona para personas con discapacidad?</span>
                             </span>
                             </label>
@@ -1215,7 +1215,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">39.</span>
+                                <span class="text-green-700 font-bold question-number">39.</span>
                                 <span>¿Qué acciones considera más urgentes para mejorar la movilidad y accesibilidad para personas con discapacidad en Tlajomulco? <em class="text-gray-500 font-normal">(máximo 3 opciones)</em></span>
                             </span>
                             </label>
@@ -1263,7 +1263,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">40.</span>
+                                <span class="text-green-700 font-bold question-number">40.</span>
                                 <span>En su opinión, los espacios públicos cercanos (parques, unidades deportivas, centros de salud, escuelas) son accesibles para personas con discapacidad:</span>
                             </span>
                             </label>
@@ -1291,7 +1291,7 @@
                         <div class="space-y-3">
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
-                                <span class="text-green-700 font-bold">41.</span>
+                                <span class="text-green-700 font-bold question-number">41.</span>
                                 <span>Comentarios o necesidades específicas relacionadas con movilidad y discapacidad en su comunidad:</span>
                             </span>
                             </label>
@@ -1531,8 +1531,8 @@
                     submitBtn.classList.add('hidden');
                 }
 
-                // Update progress
-                const progress = Math.round((step / totalSteps) * 100);
+                // Update progress (based on completed steps)
+                const progress = step === totalSteps ? 100 : Math.round(((step - 1) / totalSteps) * 100);
                 document.getElementById('progressBar').style.width = progress + '%';
                 document.getElementById('progressText').textContent = progress + '%';
 
@@ -1656,6 +1656,40 @@
             setupOtraToggle('disability_types_otra_chk', 'disability_types_otra_container');
             setupOtraToggle('mobility_barriers_otra_chk', 'mobility_barriers_otra_container');
             setupOtraToggle('urgent_actions_otra_chk', 'urgent_actions_otra_container');
+
+            // Renumber all visible questions sequentially
+            function renumberQuestions() {
+                let counter = 1;
+                document.querySelectorAll('.question-number').forEach(function(span) {
+                    const container = span.closest('.space-y-3');
+                    if (container && !container.classList.contains('hidden')) {
+                        span.textContent = counter++ + '.';
+                    }
+                });
+            }
+
+            // Q22 → show/hide Q23, Q24, Q25
+            document.querySelectorAll('input[name="has_vehicle"]').forEach(function(radio) {
+                radio.addEventListener('change', function() {
+                    const showVehicleQuestions = this.value === 'yes_car' || this.value === 'yes_motorcycle';
+                    ['question23', 'question24', 'question25'].forEach(function(id) {
+                        document.getElementById(id).classList.toggle('hidden', !showVehicleQuestions);
+                    });
+                    renumberQuestions();
+                });
+            });
+
+            // Q34 → show/hide Q35
+            document.querySelectorAll('input[name="disability_in_household"]').forEach(function(radio) {
+                radio.addEventListener('change', function() {
+                    const showQ35 = this.value === 'si_yo' || this.value === 'si_alguien';
+                    document.getElementById('question35').classList.toggle('hidden', !showQ35);
+                    renumberQuestions();
+                });
+            });
+
+            // Initial numbering
+            renumberQuestions();
 
             // Limit Q39 to max 3 checkboxes
             const urgentCheckboxes = document.querySelectorAll('.urgent-action-chk');

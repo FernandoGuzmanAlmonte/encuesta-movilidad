@@ -170,7 +170,7 @@ class SurveysExport implements FromCollection, WithHeadings, WithMapping, Should
     /**
      * Helper: Translate English values to Spanish
      */
-    private function translateValue($value): string
+    private function translateValue($value): string|null
     {
         $translations = [
             // Age
