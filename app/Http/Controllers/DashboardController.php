@@ -110,4 +110,41 @@ class DashboardController extends Controller
     {
         return Excel::download(new SurveysExport, 'encuestas_movilidad_' . date('Y-m-d_His') . '.csv');
     }
+
+    /**
+     * Show site settings page
+     */
+    public function settings()
+    {
+        $settings = $this->getSettings();
+        return view('dashboard.settings', compact('settings'));
+    }
+
+    /**
+     * Update site settings
+     */
+    public function updateSettings(Request $request)
+    {
+        $settings = [
+            'maintenance_mode' => $request->input('maintenance_mode') === '1',
+            'reopen_date'      => $request->input('reopen_date', ''),
+            'maintenance_message' => $request->input('maintenance_message', ''),
+        ];
+
+        file_put_contents(
+            storage_path('app/site_settings.json'),
+            json_encode($settings, JSON_PRETTY_PRINT)
+        );
+
+        return back()->with('success', 'Configuración guardada correctamente.');
+    }
+
+    private function getSettings(): array
+    {
+        $path = storage_path('app/site_settings.json');
+        if (file_exists($path)) {
+            return json_decode(file_get_contents($path), true) ?? [];
+        }
+        return ['maintenance_mode' => false, 'reopen_date' => '', 'maintenance_message' => ''];
+    }
 }

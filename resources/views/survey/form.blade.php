@@ -195,10 +195,10 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-700 font-bold question-number">4.</span>
-                                <span>¿A qué zona, colonia y/o municipio se traslada con mayor frecuencia?</span>
+                                <span>¿A qué zona, colonia y/o municipio se traslada con mayor frecuencia? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
-                            <input type="text" name="frequent_destination" class="form-input" placeholder="Ej: Centro de Guadalajara, Zapopan...">
+                            <input type="text" name="frequent_destination" class="form-input" placeholder="Ej: Centro de Guadalajara, Zapopan..." required>
                         </div>
 
                         <!-- Exit frequency -->
@@ -243,6 +243,45 @@
                                     <input type="radio" name="occupation" value="other" required>
                                     <span class="flex-1">Otra</span>
                                 </label>
+                            </div>
+                        </div>
+
+                        <!-- Red Social -->
+                        <div class="space-y-3">
+                            <label class="question-label">
+                            <span class="flex items-center space-x-2">
+                                <span class="text-green-700 font-bold question-number">7.</span>
+                                <span>¿Cuál es la red social que utilizas con mayor frecuencia? <span class="text-green-700">*</span></span>
+                            </span>
+                            </label>
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                                <label class="radio-option">
+                                    <input type="radio" name="social_media" value="whatsapp" required>
+                                    <span class="flex-1">WhatsApp</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="social_media" value="facebook" required>
+                                    <span class="flex-1">Facebook</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="social_media" value="instagram" required>
+                                    <span class="flex-1">Instagram</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="social_media" value="tiktok" required>
+                                    <span class="flex-1">TikTok</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="social_media" value="x_twitter" required>
+                                    <span class="flex-1">X (antes Twitter)</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="social_media" value="otra" required id="social_media_otra_radio">
+                                    <span class="flex-1">Otra</span>
+                                </label>
+                            </div>
+                            <div id="social_media_otra_container" class="hidden mt-2">
+                                <input type="text" name="social_media_other" class="form-input" placeholder="Especifique la red social...">
                             </div>
                         </div>
                     </div>
@@ -341,10 +380,10 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-600 font-bold question-number">11.</span>
-                                <span>¿Qué mejoraría de la movilidad peatonal en su zona?</span>
+                                <span>¿Qué mejoraría de la movilidad peatonal en su zona? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
-                            <textarea name="pedestrian_improvements" class="form-input" rows="4" placeholder="Comparte tus sugerencias..."></textarea>
+                            <textarea name="pedestrian_improvements" class="form-input" rows="4" placeholder="Comparte tus sugerencias..." required></textarea>
                         </div>
                     </div>
                 </div>
@@ -395,20 +434,20 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-700 font-bold question-number">13.</span>
-                                <span>¿Existen ciclovías en su ruta habitual?</span>
+                                <span>¿Existen ciclovías en su ruta habitual? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
                                 <label class="radio-option">
-                                    <input type="radio" name="bike_lane_exists" value="yes_good">
+                                    <input type="radio" name="bike_lane_exists" value="yes_good" required>
                                     <span class="flex-1">✅ Sí, en buen estado</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="bike_lane_exists" value="yes_bad">
+                                    <input type="radio" name="bike_lane_exists" value="yes_bad" required>
                                     <span class="flex-1">⚠️ Sí, pero en mal estado</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="bike_lane_exists" value="no">
+                                    <input type="radio" name="bike_lane_exists" value="no" required>
                                     <span class="flex-1">❌ No hay ciclovías</span>
                                 </label>
                             </div>
@@ -419,20 +458,20 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-700 font-bold question-number">14.</span>
-                                <span>¿Se siente seguro/a usando bicicleta en su zona?</span>
+                                <span>¿Se siente seguro/a usando bicicleta en su zona? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
                                 <label class="radio-option">
-                                    <input type="radio" name="bike_safety" value="yes">
+                                    <input type="radio" name="bike_safety" value="yes" required>
                                     <span class="flex-1">Sí</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="bike_safety" value="sometimes">
+                                    <input type="radio" name="bike_safety" value="sometimes" required>
                                     <span class="flex-1">A veces</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="bike_safety" value="no">
+                                    <input type="radio" name="bike_safety" value="no" required>
                                     <span class="flex-1">No</span>
                                 </label>
                             </div>
@@ -475,10 +514,10 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-700 font-bold question-number">16.</span>
-                                <span>De tu localidad, ¿En dónde consideras viable una ciclovía?</span>
+                                <span>De tu localidad, ¿En dónde consideras viable una ciclovía? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
-                            <textarea name="bike_lane_viable" class="form-input" rows="3" placeholder="Indica las calles o zonas donde sería útil una ciclovía..."></textarea>
+                            <textarea name="bike_lane_viable" class="form-input" rows="3" placeholder="Indica las calles o zonas donde sería útil una ciclovía..." required></textarea>
                         </div>
                     </div>
                 </div>
@@ -529,40 +568,40 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-700 font-bold question-number">18.</span>
-                                <span>¿Qué medio utiliza con más frecuencia?</span>
+                                <span>¿Qué medio utiliza con más frecuencia? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                                 <label class="radio-option">
-                                    <input type="radio" name="most_used_transport" value="urban_bus">
+                                    <input type="radio" name="most_used_transport" value="urban_bus" required>
                                     <span class="flex-1">🚌 Camión urbano</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="most_used_transport" value="feeder_bus">
+                                    <input type="radio" name="most_used_transport" value="feeder_bus" required>
                                     <span class="flex-1">🚌 Camión/Alimentadora</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="most_used_transport" value="light_rail">
+                                    <input type="radio" name="most_used_transport" value="light_rail" required>
                                     <span class="flex-1">🚊 Tren ligero</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="most_used_transport" value="taxi">
+                                    <input type="radio" name="most_used_transport" value="taxi" required>
                                     <span class="flex-1">🚕 Taxi/Sitio</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="most_used_transport" value="uber">
+                                    <input type="radio" name="most_used_transport" value="uber" required>
                                     <span class="flex-1">🚗 Uber</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="most_used_transport" value="macro_calzada">
+                                    <input type="radio" name="most_used_transport" value="macro_calzada" required>
                                     <span class="flex-1">🚌 Macro calzada</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="most_used_transport" value="macro_periferico">
+                                    <input type="radio" name="most_used_transport" value="macro_periferico" required>
                                     <span class="flex-1">🚌 Macro periférico</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="most_used_transport" value="other">
+                                    <input type="radio" name="most_used_transport" value="other" required>
                                     <span class="flex-1">Otro</span>
                                 </label>
                             </div>
@@ -573,24 +612,24 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-700 font-bold question-number">19.</span>
-                                <span>Tiempo promedio de traslado en transporte público (ida):</span>
+                                <span>Tiempo promedio de traslado en transporte público (ida): <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                                 <label class="radio-option">
-                                    <input type="radio" name="public_transport_time" value="under_30min">
+                                    <input type="radio" name="public_transport_time" value="under_30min" required>
                                     <span class="flex-1">⏱️ Menos de 30 min</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="public_transport_time" value="30min_1hour">
+                                    <input type="radio" name="public_transport_time" value="30min_1hour" required>
                                     <span class="flex-1">⏱️ 30 min a 1 hora</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="public_transport_time" value="1_2_hours">
+                                    <input type="radio" name="public_transport_time" value="1_2_hours" required>
                                     <span class="flex-1">⏱️ De 1 hora a 2 horas</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="public_transport_time" value="over_2_hours">
+                                    <input type="radio" name="public_transport_time" value="over_2_hours" required>
                                     <span class="flex-1">⏱️ Más de 2 horas</span>
                                 </label>
                             </div>
@@ -633,10 +672,10 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-700 font-bold question-number">21.</span>
-                                <span>¿Qué ruta o rutas te benefician más? ¿Qué ruta te gustaría?</span>
+                                <span>¿Qué ruta o rutas te benefician más? ¿Qué ruta te gustaría? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
-                            <textarea name="preferred_routes" class="form-input" rows="3" placeholder="Describe las rutas que utilizas o que te gustaría que existieran..."></textarea>
+                            <textarea name="preferred_routes" class="form-input" rows="3" placeholder="Describe las rutas que utilizas o que te gustaría que existieran..." required></textarea>
                         </div>
                     </div>
                 </div>
@@ -683,24 +722,24 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-700 font-bold question-number">23.</span>
-                                <span>¿Con qué frecuencia lo usa para trasladarse?</span>
+                                <span>¿Con qué frecuencia lo usa para trasladarse? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                                 <label class="radio-option">
-                                    <input type="radio" name="vehicle_usage_frequency" value="1_3_days">
+                                    <input type="radio" name="vehicle_usage_frequency" value="1_3_days" required>
                                     <span class="flex-1">De 1 a 3 días</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="vehicle_usage_frequency" value="4_6_days">
+                                    <input type="radio" name="vehicle_usage_frequency" value="4_6_days" required>
                                     <span class="flex-1">De 4 a 6 días</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="vehicle_usage_frequency" value="daily">
+                                    <input type="radio" name="vehicle_usage_frequency" value="daily" required>
                                     <span class="flex-1">Diario</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="vehicle_usage_frequency" value="never">
+                                    <input type="radio" name="vehicle_usage_frequency" value="never" required>
                                     <span class="flex-1">Nunca</span>
                                 </label>
                             </div>
@@ -711,24 +750,24 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-700 font-bold question-number">24.</span>
-                                <span>¿Cuál es su tiempo promedio de traslado en vehículo particular?</span>
+                                <span>¿Cuál es su tiempo promedio de traslado en vehículo particular? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                                 <label class="radio-option">
-                                    <input type="radio" name="private_transport_time" value="under_30min">
+                                    <input type="radio" name="private_transport_time" value="under_30min" required>
                                     <span class="flex-1">Menos de 30 min</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="private_transport_time" value="30min_1hour">
+                                    <input type="radio" name="private_transport_time" value="30min_1hour" required>
                                     <span class="flex-1">30 min - 1 hora</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="private_transport_time" value="1_2_hours">
+                                    <input type="radio" name="private_transport_time" value="1_2_hours" required>
                                     <span class="flex-1">1 hora – 2 horas</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="private_transport_time" value="over_2_hours">
+                                    <input type="radio" name="private_transport_time" value="over_2_hours" required>
                                     <span class="flex-1">Más de 2 horas</span>
                                 </label>
                             </div>
@@ -739,24 +778,24 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-700 font-bold question-number">25.</span>
-                                <span>¿Cómo califica el tráfico en su ruta habitual?</span>
+                                <span>¿Cómo califica el tráfico en su ruta habitual? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                                 <label class="radio-option">
-                                    <input type="radio" name="traffic_rating" value="fluid">
+                                    <input type="radio" name="traffic_rating" value="fluid" required>
                                     <span class="flex-1">✅ Fluido</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="traffic_rating" value="moderate">
+                                    <input type="radio" name="traffic_rating" value="moderate" required>
                                     <span class="flex-1">⚠️ Moderado</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="traffic_rating" value="congested">
+                                    <input type="radio" name="traffic_rating" value="congested" required>
                                     <span class="flex-1">🚦 Congestionado</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="traffic_rating" value="very_congested">
+                                    <input type="radio" name="traffic_rating" value="very_congested" required>
                                     <span class="flex-1">🚨 Muy congestionado</span>
                                 </label>
                             </div>
@@ -767,10 +806,10 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-700 font-bold question-number">26.</span>
-                                <span>¿Qué calle en su localidad es en la que más tráfico se hace?</span>
+                                <span>¿Qué calle en su localidad es en la que más tráfico se hace? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
-                            <input type="text" name="most_traffic_street" id="trafficStreetInput" class="form-input mb-3" placeholder="Escribe la calle o marca en el mapa...">
+                            <input type="text" name="most_traffic_street" id="trafficStreetInput" class="form-input mb-3" placeholder="Escribe la calle o marca en el mapa..." required>
 
                             <div class="bg-green-50 border-l-4 border-green-600 p-4 rounded-lg mb-3">
                                 <div class="space-y-2">
@@ -914,10 +953,10 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-700 font-bold question-number">31.</span>
-                                <span>¿Qué calles, avenidas o zonas considera prioritarias para mejorar?</span>
+                                <span>¿Qué calles, avenidas o zonas considera prioritarias para mejorar? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
-                            <textarea name="priority_zones" id="priorityZonesInput" class="form-input mb-3" rows="3" placeholder="Describe las zonas que consideras prioritarias o márcalas en el mapa..."></textarea>
+                            <textarea name="priority_zones" id="priorityZonesInput" class="form-input mb-3" rows="3" placeholder="Describe las zonas que consideras prioritarias o márcalas en el mapa..." required></textarea>
 
                             <div class="bg-green-50 border-l-4 border-green-600 p-4 rounded-lg mb-3">
                                 <div class="space-y-2">
@@ -980,28 +1019,28 @@
                             <label class="question-label">
                             <span class="flex items-center space-x-2">
                                 <span class="text-green-700 font-bold question-number">33.</span>
-                                <span>¿Qué medio utiliza con más frecuencia para trasladarse en las vialidades antes seleccionadas?</span>
+                                <span>¿Qué medio utiliza con más frecuencia para trasladarse en las vialidades antes seleccionadas? <span class="text-green-700">*</span></span>
                             </span>
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                                 <label class="radio-option">
-                                    <input type="radio" name="roads_transport_mode" value="public_transport">
+                                    <input type="radio" name="roads_transport_mode" value="public_transport" required>
                                     <span class="flex-1">🚌 Transporte Público</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="roads_transport_mode" value="motorcycle">
+                                    <input type="radio" name="roads_transport_mode" value="motorcycle" required>
                                     <span class="flex-1">🏍️ Moto</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="roads_transport_mode" value="car">
+                                    <input type="radio" name="roads_transport_mode" value="car" required>
                                     <span class="flex-1">🚗 Carro</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="roads_transport_mode" value="bicycle">
+                                    <input type="radio" name="roads_transport_mode" value="bicycle" required>
                                     <span class="flex-1">🚴 Bicicleta</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="roads_transport_mode" value="other">
+                                    <input type="radio" name="roads_transport_mode" value="other" required>
                                     <span class="flex-1">Otro</span>
                                 </label>
                             </div>
@@ -1579,6 +1618,9 @@
                 let firstInvalid = null;
 
                 for (let field of requiredFields) {
+                    // Saltar campos dentro de contenedores ocultos (preguntas condicionales)
+                    if (field.closest('.hidden')) continue;
+
                     if (field.type === 'radio') {
                         const radioGroup = currentStepEl.querySelectorAll(`[name="${field.name}"]`);
                         const isChecked = Array.from(radioGroup).some(radio => radio.checked);
@@ -1656,6 +1698,16 @@
             setupOtraToggle('disability_types_otra_chk', 'disability_types_otra_container');
             setupOtraToggle('mobility_barriers_otra_chk', 'mobility_barriers_otra_container');
             setupOtraToggle('urgent_actions_otra_chk', 'urgent_actions_otra_container');
+
+            // Toggle "Otra" para red social
+            document.querySelectorAll('input[name="social_media"]').forEach(function(radio) {
+                radio.addEventListener('change', function() {
+                    const container = document.getElementById('social_media_otra_container');
+                    if (container) {
+                        container.classList.toggle('hidden', this.value !== 'otra');
+                    }
+                });
+            });
 
             // Renumber all visible questions sequentially
             function renumberQuestions() {

@@ -35,6 +35,8 @@ class SurveysExport implements FromCollection, WithHeadings, WithMapping, Should
             'Destino Frecuente',
             'Frecuencia de Salida',
             'Ocupación',
+            'Red Social Más Usada',
+            'Otra Red Social',
 
             // Pedestrians
             'Frecuencia Caminar',
@@ -97,6 +99,8 @@ class SurveysExport implements FromCollection, WithHeadings, WithMapping, Should
             $survey->frequent_destination,
             $this->translateValue($survey->exit_frequency),
             $this->translateValue($survey->occupation),
+            $this->translateValue($survey->social_media),
+            $survey->social_media_other,
 
             // Pedestrians
             $this->translateValue($survey->walking_frequency),
@@ -306,6 +310,14 @@ class SurveysExport implements FromCollection, WithHeadings, WithMapping, Should
             'motorcycle' => 'Moto',
             'car' => 'Carro',
             'bicycle' => 'Bicicleta',
+
+            // Social media
+            'whatsapp' => 'WhatsApp',
+            'facebook' => 'Facebook',
+            'instagram' => 'Instagram',
+            'tiktok' => 'TikTok',
+            'x_twitter' => 'X (antes Twitter)',
+            'otra' => 'Otra',
         ];
 
         return $translations[$value] ?? $value;

@@ -8,6 +8,14 @@ use Illuminate\Http\Request;
 class SurveyController extends Controller
 {
     /**
+     * Display the welcome page
+     */
+    public function welcome()
+    {
+        return view('survey.welcome');
+    }
+
+    /**
      * Display the survey form
      */
     public function index()
@@ -26,46 +34,48 @@ class SurveyController extends Controller
             'age' => 'required|string',
             'gender' => 'required|string',
             'neighborhood' => 'required|string|max:255',
-            'frequent_destination' => 'nullable|string|max:255',
+            'frequent_destination' => 'required|string|max:255',
             'exit_frequency' => 'required|string',
             'occupation' => 'required|string',
+            'social_media' => 'required|string',
+            'social_media_other' => 'nullable|string|max:255',
 
             // Pedestrians
             'walking_frequency' => 'required|string',
             'safe_sidewalks' => 'required|string',
             'safe_crossings' => 'required|string',
             'walking_safety' => 'required|string',
-            'pedestrian_improvements' => 'nullable|string',
+            'pedestrian_improvements' => 'required|string',
 
             // Bike lanes
             'bike_usage' => 'required|string',
-            'bike_lane_exists' => 'nullable|string',
-            'bike_safety' => 'nullable|string',
+            'bike_lane_exists' => 'required|string',
+            'bike_safety' => 'required|string',
             'bike_obstacles' => 'nullable|array',
-            'bike_lane_viable' => 'nullable|string',
+            'bike_lane_viable' => 'required|string',
 
             // Public transport
             'public_transport_frequency' => 'required|string',
-            'most_used_transport' => 'nullable|string',
-            'public_transport_time' => 'nullable|string',
+            'most_used_transport' => 'required|string',
+            'public_transport_time' => 'required|string',
             'public_transport_problems' => 'nullable|array',
-            'preferred_routes' => 'nullable|string',
+            'preferred_routes' => 'required|string',
 
             // Vehicles
             'has_vehicle' => 'required|string',
             'vehicle_usage_frequency' => 'nullable|string',
             'private_transport_time' => 'nullable|string',
             'traffic_rating' => 'nullable|string',
-            'most_traffic_street' => 'nullable|string',
+            'most_traffic_street' => 'required|string',
 
             // Roads
             'roads_condition' => 'required|string',
             'road_problems' => 'nullable|array',
             'roads_for_all' => 'required|string',
             'maintenance_frequency' => 'required|string',
-            'priority_zones' => 'nullable|string',
+            'priority_zones' => 'required|string',
             'frequent_roads' => 'nullable|array',
-            'roads_transport_mode' => 'nullable|string',
+            'roads_transport_mode' => 'required|string',
 
             // Coordinates
             'traffic_street_lat' => 'nullable|numeric',
@@ -100,5 +110,29 @@ class SurveyController extends Controller
     public function thanks()
     {
         return view('survey.thanks');
+    }
+
+    /**
+     * Maintenance page
+     */
+    public function maintenance()
+    {
+        $settings = ['reopen_date' => '', 'maintenance_message' => ''];
+        $path = storage_path('app/site_settings.json');
+        if (file_exists($path)) {
+            $settings = json_decode(file_get_contents($path), true) ?? $settings;
+        }
+
+        $reopenDate = '';
+        if (!empty($settings['reopen_date'])) {
+            $reopenDate = \Carbon\Carbon::parse($settings['reopen_date'])
+                ->locale('es')
+                ->isoFormat('D [de] MMMM [de] YYYY');
+        }
+
+        return view('maintenance', [
+            'reopenDate' => $reopenDate,
+            'message'    => $settings['maintenance_message'] ?? '',
+        ]);
     }
 }

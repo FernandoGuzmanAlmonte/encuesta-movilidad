@@ -10,9 +10,28 @@
             <p class="text-gray-600">Análisis estadístico de la movilidad urbana</p>
         </div>
 
+        @php
+            $siteSettings = ['maintenance_mode' => false];
+            $settingsPath = storage_path('app/site_settings.json');
+            if (file_exists($settingsPath)) {
+                $siteSettings = json_decode(file_get_contents($settingsPath), true) ?? $siteSettings;
+            }
+        @endphp
+
+        <!-- Estado del sitio -->
+        @if($siteSettings['maintenance_mode'])
+        <div class="bg-red-50 border border-red-300 rounded-lg px-5 py-4 mb-6 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                <span class="font-semibold text-red-800">El sitio está en mantenimiento · La encuesta no es visible al público</span>
+            </div>
+            <a href="{{ route('dashboard.settings') }}" class="text-sm text-red-700 underline font-semibold hover:text-red-900">Configurar</a>
+        </div>
+        @endif
+
         <!-- Export Buttons -->
         <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
-            <h2 class="text-xl font-bold text-gray-800 mb-4">Exportar Datos</h2>
+            <h2 class="text-xl font-bold text-gray-800 mb-4">Acciones</h2>
             <div class="flex flex-wrap gap-4">
                 <a href="{{ route('dashboard.export.excel') }}" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

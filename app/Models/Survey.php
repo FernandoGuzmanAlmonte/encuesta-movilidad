@@ -12,6 +12,7 @@ class Survey extends Model
     protected $fillable = [
         // General data
         'age', 'gender', 'neighborhood', 'frequent_destination', 'exit_frequency', 'occupation',
+        'social_media', 'social_media_other',
 
         // Pedestrians
         'walking_frequency', 'safe_sidewalks', 'safe_crossings',
