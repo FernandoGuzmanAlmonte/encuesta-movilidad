@@ -117,6 +117,15 @@
         </div>
 
         <!-- Form -->
+        @if ($errors->has('csrf'))
+            <div class="mb-6 p-4 bg-red-100 border border-red-400 text-red-800 rounded-lg flex items-start space-x-3">
+                <svg class="w-6 h-6 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+                </svg>
+                <span>{{ $errors->first('csrf') }}</span>
+            </div>
+        @endif
+
         <form action="{{ route('survey.store') }}" method="POST" id="surveyForm">
             @csrf
 
@@ -727,19 +736,19 @@
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                                 <label class="radio-option">
-                                    <input type="radio" name="vehicle_usage_frequency" value="1_3_days" required>
+                                    <input type="radio" name="vehicle_usage_frequency" value="1_3_days">
                                     <span class="flex-1">De 1 a 3 días</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="vehicle_usage_frequency" value="4_6_days" required>
+                                    <input type="radio" name="vehicle_usage_frequency" value="4_6_days">
                                     <span class="flex-1">De 4 a 6 días</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="vehicle_usage_frequency" value="daily" required>
+                                    <input type="radio" name="vehicle_usage_frequency" value="daily">
                                     <span class="flex-1">Diario</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="vehicle_usage_frequency" value="never" required>
+                                    <input type="radio" name="vehicle_usage_frequency" value="never">
                                     <span class="flex-1">Nunca</span>
                                 </label>
                             </div>
@@ -755,19 +764,19 @@
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                                 <label class="radio-option">
-                                    <input type="radio" name="private_transport_time" value="under_30min" required>
+                                    <input type="radio" name="private_transport_time" value="under_30min">
                                     <span class="flex-1">Menos de 30 min</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="private_transport_time" value="30min_1hour" required>
+                                    <input type="radio" name="private_transport_time" value="30min_1hour">
                                     <span class="flex-1">30 min - 1 hora</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="private_transport_time" value="1_2_hours" required>
+                                    <input type="radio" name="private_transport_time" value="1_2_hours">
                                     <span class="flex-1">1 hora – 2 horas</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="private_transport_time" value="over_2_hours" required>
+                                    <input type="radio" name="private_transport_time" value="over_2_hours">
                                     <span class="flex-1">Más de 2 horas</span>
                                 </label>
                             </div>
@@ -783,19 +792,19 @@
                             </label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                                 <label class="radio-option">
-                                    <input type="radio" name="traffic_rating" value="fluid" required>
+                                    <input type="radio" name="traffic_rating" value="fluid">
                                     <span class="flex-1">✅ Fluido</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="traffic_rating" value="moderate" required>
+                                    <input type="radio" name="traffic_rating" value="moderate">
                                     <span class="flex-1">⚠️ Moderado</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="traffic_rating" value="congested" required>
+                                    <input type="radio" name="traffic_rating" value="congested">
                                     <span class="flex-1">🚦 Congestionado</span>
                                 </label>
                                 <label class="radio-option">
-                                    <input type="radio" name="traffic_rating" value="very_congested" required>
+                                    <input type="radio" name="traffic_rating" value="very_congested">
                                     <span class="flex-1">🚨 Muy congestionado</span>
                                 </label>
                             </div>
